@@ -1,6 +1,8 @@
-const redirects: { [index: string]: string } = {
-  github: 'https://github.com/joseph-bravo',
-  linkedin: 'https://www.linkedin.com/in/joseph-bravo/'
-};
+import redirectsJson from './redirects.json';
+import { StringIndexObject } from './types';
+
+const redirects: StringIndexObject = redirectsJson;
+
+console.log(redirects);
 
 export default redirects;

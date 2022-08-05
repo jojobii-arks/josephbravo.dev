@@ -1,0 +1,26 @@
+[
+  {
+    "content": [
+      {
+        "description": "A Full Stack Web Application that allows users to share special image files with others.",
+        "tech": [
+          "React",
+          "Tailwind CSS (DaisyUI)",
+          "Node",
+          "Express",
+          "PostgreSQL",
+          "AWS S3",
+          "Heroku"
+        ],
+        "title": "Symbol Art Vault"
+      }
+    ],
+    "description": "Web Applications I've created that provide for a particular use case.",
+    "header": "Showcase Projects"
+  },
+  {
+    "content": [],
+    "description": "Demonstrations of proficiency in particular skillsets through sample programs.",
+    "header": "Practice Projects"
+  }
+]

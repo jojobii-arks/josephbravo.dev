@@ -2,14 +2,10 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import redirects from '../../lib/redirects';
 
-/**
- *
- * @param {NextApiRequest} req
- * @param {NextApiResponse} res
- */
-export default function handler(req, res) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const { redirect } = req.query;
-  const path = redirects[redirect];
+  if (!redirect || Array.isArray(redirect)) res.status(404).send('Not found');
+  const path = redirects[redirect as string];
   if (!path) res.status(404).send('Not found');
   res.redirect(path);
 }
